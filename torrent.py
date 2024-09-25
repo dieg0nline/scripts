@@ -11,12 +11,12 @@ def get_magnet_link_from_clipboard():
     return root.clipboard_get()
 
 magnet_link = get_magnet_link_from_clipboard()
-
+save_path = '/home/dieg0nline/Downloads/'
 
 # Crear la sesión de BitTorrent
 ses = lt.session()
 params = {
-    'save_path': '/home/dieg0nline/Downloads/',  # Carpeta donde se guardará el archivo descargado
+    'save_path': save_path,  # Carpeta donde se guardará el archivo descargado
     'storage_mode': lt.storage_mode_t.storage_mode_sparse
 }
 

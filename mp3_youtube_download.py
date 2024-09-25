@@ -89,8 +89,8 @@ def get_video_url_from_clipboard():
 def get_save_path():
     app = QApplication(sys.argv)
     # modifico para que guarde directamente en la carpeta indicada en vez de abrir dialogo
-    # save_path = QFileDialog.getExistingDirectory(None, 'Selecciona la carpeta donde guardar el archivo')
     save_path = "/home/dieg0nline/Downloads/Videos/"
+    # save_path = QFileDialog.getExistingDirectory(None, 'Selecciona la carpeta donde guardar el archivo')
     if save_path:
         return save_path
     return None
